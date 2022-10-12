@@ -1,0 +1,868 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --btn-color: #36BDC6;
+    --font-color: #fff;
+    --btn-color1: #75f4fd;
+    --font-color1: #026180;
+    --text-color: #ABABAB;
+    --h2-text: #182231;
+}
+@font-face {
+    font-family: Ordina;
+    src: url(/fonts/ordina-wide_0.otf);
+    font-family: Ordina Heavy;
+    src: url(/fonts/Ordina-WideHeavy.otf);
+}
+button{
+    padding: 10px 20px;
+    font-weight: 500;
+    background-color: var(--btn-color);
+    box-shadow: 0px 12px 25px rgba(54, 189, 198, 0.2);
+    cursor: pointer;
+    border: none;
+    color: var(--font-color);
+    transition: .3s;
+}
+button:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    border-radius: 2px;
+}
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+/*------------- HEADER -------------*/ 
+
+header{
+    background-color: #13161B;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+nav a{
+    text-decoration: none;
+}
+nav .navbar li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    font-weight:500;
+    padding-left: 40px;
+}
+nav .navbar li a{
+    color: var(--font-color);
+    font-size: 1rem;
+}
+nav .logo, .ve{
+    font-family: Ordina, sans-serif;
+    margin-right: 100px;
+    color: var(--font-color);
+    font-size: 22px;
+}
+nav .ve{
+    color: var(--btn-color);
+}
+nav .sign-in-up button{
+    margin-left:20px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--btn-color);
+    box-shadow: 0px 12px 25px rgba(54, 189, 198, 0.2);
+    cursor: pointer;
+    border: none;
+    color: var(--font-color);
+    transition: .3s;
+}
+nav .sign-in-up .sign-in{
+    background-color: var(--btn-color1);
+    color: var(--font-color1);
+}
+nav .sign-in-up .sign-in:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    border-radius: 2px;
+}
+nav .sign-in-up .sign-up:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+    border-radius: 2px;
+}
+/*------------- MAIN -------------*/
+#section-main{
+    height: 100vh;
+    width: auto;
+    background-color: #000000;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.main .text{
+    margin-top: 100px;
+
+}
+.main .text h1, .text p, .details{
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color);
+    margin-top: 50px;
+}
+.main .text h1{
+    font-family: 'Ordina Heavy', sans-serif;
+    color: var(--font-color);
+    line-height: 50px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 120%;
+}
+.main .text p{
+    width: 650px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+.main .text .details{
+    font-size: 600;
+    padding: 1rem 3rem;
+}
+
+.main .img1{
+    width: 60rem;
+    margin-left: -90px;
+    padding-right: 20px;
+    padding-top: 200px;
+}
+
+/*------------- Why is it necessary? --------------*/
+
+#section-necessary{
+    height: 100vh;
+    width: auto;
+    background-color: #13161B;
+}
+.necessary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text1{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+.text1 h2{
+    font-family: 'Ordina Heavy';
+    font-size: 4rem;
+    color:var(--font-color);
+}
+.text1 p{
+    color: var(--text-color);
+    font-size: 18px;
+    margin-top: 20px;
+}
+.necessary .blocks-3{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 80px;
+    margin-top: 50px;
+}
+.necessary .blocks-3 div{
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: 36rem;
+    background-color: #182231;
+}
+.necessary .blocks-3 div h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+    color: var(--font-color);
+}
+.necessary .blocks-3 div p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+}
+.necessary .blocks-3 div button{
+    align-self: center;
+    padding: 1rem 3rem;
+}
+.necessary div img{
+    width: auto;
+    object-fit: cover;
+    height: 480px;
+}
+
+
+/*------------- ABOUT US -------------*/
+
+#about-us{
+    height: 100vh;
+    width: auto;
+    background-color: #F4F4F4;
+    border-bottom: #efefef;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+.about-us-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+.about-us-up{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-us-up img{
+    height: 34rem;
+    width: auto;
+}
+.about-us-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+}
+.about-us-text h2{
+    font-family: 'Ordina Heavy', sans-serif;
+    font-size: 6rem;
+    color: var(--h2-text);
+}
+.about-us-text p{
+    color: var(--text-color);
+    padding-top: 2rem;
+    font-size: 18px;
+    padding-bottom: 2rem;
+}
+.about-us-text button{
+    align-self: start;
+    padding: 1rem 3rem;
+}
+.icons-opportunities{
+    padding: 8rem 4rem 2rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icons-opportunities div{
+    height: 36vh;
+    width: 20vw;
+    background-color: #fff;
+}
+.icons-opportunities div img{
+    height: 12rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.icons-opportunities div h2{
+    padding-left: 3rem;
+    padding-top: 1rem;
+    width: 10vw;
+    font-size: 2rem;
+}
+.icons-opportunities div p{
+    color: var(--text-color);
+    font-size: 0.8vw;
+    width: 14vw;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    margin-top: 5%;
+}
+/*------------- TECHNOLOGY -------------*/ 
+#tech{
+    height: 100vh;
+    width: auto;
+    background-color: #F4F4F4;   
+}
+.tech-main{
+    display: flex;
+    padding-top: 8rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.tech-pics{
+    display: flex;
+    flex-direction: column;
+}
+.tech-pics img{
+    width: 30rem;
+}
+.tech-pics .aws{
+    width: 35rem;
+    position: absolute;
+}
+.tech-pics .eth{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.tech-text{
+    width: 55rem;
+    height: 45rem;
+    background-color: white;
+    padding: 2rem 4rem;
+}
+.tech-text h2{
+    font-family: 'Ordina Heavy';
+    color: var(--h2-text);
+    font-size: 6rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
+.tech-text p{
+    color: var(--text-color);
+    padding-bottom: 3rem;
+    font-size: 18px;
+}
+.tech-text button{
+    padding: 1rem 3rem;
+}
+#tech .its-cheap{
+    display: flex;
+    padding-top: 8rem;
+    margin: 60px 100px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+#tech .its-cheap h3{
+    font-size: 2rem;
+    justify-content: space-between;
+    text-align: center;
+    color: var(--h2-text);
+}
+#tech .its-cheap p{
+    padding: 1rem 4rem;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 0px;
+    color: var(--text-color);
+}
+/*------------- TECHNOLOGY ROADMAP -------------*/ 
+
+#techrm{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: auto;
+    background-color: #13161B;
+    flex-direction: column;
+}
+#techrm .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+    column-gap: 4rem;
+    padding: 2rem 4rem;
+}
+#techrm .grid img{
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 2rem 0rem;
+    justify-content: space-between;
+}
+#techrm .grid div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background-color: white;
+    height: 38vh;
+    width: 20vw;
+    margin: auto;
+    transition: 0.5s;
+}
+#techrm .grid div:hover{
+    transform: scale(1.1);
+    background-color: rgb(238, 238, 238);
+}
+#techrm .grid div h3{
+    font-family: 'Ordina Heavy';
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    color: var(--font-color1);
+}
+#techrm .grid div p{
+    margin-bottom:2rem ;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    color: var(--text-color);
+}
+#techrm h2{
+    text-align: center;
+    padding: 3rem 0rem;
+    font-size: 3rem;
+    color: white;
+    font-family: 'Ordina Heavy';
+}
+
+/*------------- PRICES -------------*/ 
+
+#prices{
+    height: 80vh;
+    width: auto;
+    background-color: #F4F4F4; 
+    border-bottom: #efefef;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+}
+.price-containers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem;
+    padding: 8rem 4rem 0.5rem 4rem;
+}
+.price-containers .price1, .price2{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    height: 38rem;
+    width: 20vw;
+
+}
+.price-containers .head-p h3{
+    color: var(--h2-text);
+    font-size: 22px;
+}
+.price-containers .head-p p{
+    margin-top: 10px;
+    width: 100%;
+}
+.price-containers .cost{
+    display: flex;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-containers .cost p{
+    font-size: 24px;
+    font-weight: 900;
+    margin-right: 0;
+    width: 40%;
+    color: var(--btn-color);
+}
+.price-containers p{
+    color: var(--text-color);
+    width: 80%;
+    font-size: 18px;
+}
+.price-containers h3{
+    margin-top: 20px;
+}
+.advantage{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1.4rem;
+    justify-content: space-around;
+}
+.advantage img{
+    width: 20px;
+    height: 20px;
+}
+.price-containers button{
+    padding: 0.8rem 1.6rem;
+}
+.whats{
+    color: var(--h2-text);
+    padding-bottom: 1rem;
+}
+.price2{
+    margin-top: -30px;
+}
+.sub-p{
+    text-align: left;
+    padding: 2rem 0rem 1rem 5rem;
+    font-size: 3rem;
+    color: var(--h2-text);
+    font-family: 'Ordina Heavy';
+}
+
+/*------------------ FAQ -----------------*/
+
+#faq{
+    height: 100vh;
+    width: auto;
+    background-color: #f4f4f4;
+}
+#faq h2{
+    text-align: center;
+    padding: 6rem 0rem;
+    font-family: 'Ordina Heavy';
+    font-size: 4rem;
+}
+.faq-block{
+    display: flex;
+    padding-top: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#faq img{
+    width: 28rem;
+    transition: 0.5s;
+}
+#faq img:hover{
+    transform:scale(1.2);
+}
+#faq button{
+    padding: 20px 330px;
+}
+#faq button:hover{
+    transform: scale(1.05);
+}
+#accordion{
+    margin: 20px auto;
+    width: 800px;
+    transition: 0.5s;
+}
+#accordion:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+#accordion li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 2px;
+}
+#accordion li label{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--h2-text);
+}
+#accordion li label .arrow{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: #000000;
+    font-family: 'Segoe UI', sans-serif;
+}
+#accordion label+ input[type="radio"]{
+    display: none;
+}
+#accordion .faq-content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label+ input[type="radio"]:checked + .faq-content{
+    max-height: 200px;
+}
+/*---------------- FOOTER -----------------*/
+footer{
+    display: flex;
+    background: #13161B;
+    height: 24vh;
+    justify-content: space-between;
+    padding-left: 100px;
+}
+footer img{
+    width: 12rem;
+}
+.logotip{
+    margin: auto 0;
+}
+.logotip h2, .ve1{
+    font-family: 'Ordina Heavy';
+    color: var(--font-color);
+    font-size: 3rem;
+}
+.logotip .ve1{
+    color: var(--btn-color);
+    font-size: 3rem;
+}
+.footer-text a{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--font-color);
+}
+.footer-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    padding: 3rem 4rem 3rem 4rem;
+    color: var(--font-color);
+}
+.footer-text h3, .footer-text p{
+    padding: 10px 100px 0px 0px;
+}
+.footer-text div{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+@media screen and (max-width:1920px){
+    .main .text h1, .text p, .details{
+        display: flex;
+        flex-direction: column;
+        color: var(--font-color);
+        margin-top: 30px;
+    }
+    .main .text h1{
+        font-family: 'Ordina Heavy', sans-serif;
+        color: var(--font-color);
+        line-height: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 100%;
+    }
+    .main .text p{
+        width: 450px;
+        color: var(--text-color);
+        font-size: 16px;
+    }
+    .main .text .details{
+        font-size: 600;
+        padding: 1rem 2rem;
+    }
+    
+    .main .img1{
+        width: 40rem;
+        margin-left: -70px;
+        padding-right: 16px;
+        padding-top: 160px;
+    }
+    .text1{
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+    /*-----------------------------------------------------*/
+    .text1 h2{
+        font-family: 'Ordina Heavy';
+        font-size: 3rem;
+        padding-top: 2rem;
+        color:var(--font-color);
+    }
+    .text1 p{
+        color: var(--text-color);
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    .necessary .blocks-3{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        gap: 50px;
+        margin-top: 36px;
+    }
+    .necessary .blocks-3 div{
+        display: flex;
+        flex-direction: column;
+        height: 52rem;
+        width: 24rem;
+        background-color: #182231;
+    }
+    .necessary .blocks-3 div h2{
+        text-align: center;
+        font-size: 1.8rem;
+        padding-top: 3.4rem;
+        color: var(--font-color);
+    }
+    .necessary .blocks-3 div p{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 1.6rem;
+        padding-bottom: 2.6rem;
+        color: var(--text-color);
+    }
+    .necessary .blocks-3 div button{
+        align-self: center;
+        padding: 1rem 3rem;    
+    }
+    .icons-opportunities div p{
+        color: var(--text-color);
+        font-size: 18px;
+        width: 14vw;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        margin-top: 5%;
+    }
+    .tech-pics img{
+        width: 24rem;
+    }
+    .tech-pics .aws{
+        width: 28rem;
+        position: absolute;
+    }
+    .tech-text{
+        width: 45rem;
+        height: 35rem;
+        background-color: white;
+        padding: 2rem 4rem;
+    }
+    .tech-text h2{
+        font-family: 'Ordina Heavy';
+        color: var(--h2-text);
+        font-size: 4rem;
+        padding: 2rem 0rem 2rem 0rem;
+    }
+    .tech-text p{
+        color: var(--text-color);
+        padding-bottom: 3rem;
+        font-size: 18px;
+    }
+    .tech-text button{
+        padding: 1.2rem 3rem;
+    }
+    #tech .its-cheap{
+        display: flex;
+        padding-top: 8rem;
+        margin: 60px 100px;
+        margin-top: 280px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    /*-----------------------------------------------------*/
+    #techrm .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 2.5rem;
+        padding: 2rem 4rem;
+    }
+    #techrm .grid img{
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 1.8rem 0rem;
+        justify-content: space-between;
+    }
+    #techrm .grid div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        background-color: white;
+        height: 38vh;
+        width: 22vw;
+        margin: auto;
+    }
+    #techrm .grid div h3{
+        font-family: 'Ordina Heavy';
+        font-size: 1.4rem;
+        padding: 1rem 1rem;
+        color: var(--font-color1);
+    }
+    #techrm .grid div p{
+        margin-bottom:2rem ;
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        color: var(--text-color);
+    }
+    #techrm h2{
+        text-align: center;
+        padding: 3rem 0rem;
+        font-size: 2.5rem;
+        color: white;
+        font-family: 'Ordina Heavy';
+    }
+    /*------------- PRICES -------------*/ 
+    .price-containers{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2rem;
+        padding: 6rem 2.8rem 0.4rem 3rem;
+    }
+    .price-containers .price1, .price2{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem;
+        height: 40rem;
+        width: 24vw;
+    
+    }
+    .price-containers .head-p h3{
+        color: var(--h2-text);
+        font-size: 24px;
+    }
+    .price-containers .head-p p{
+        margin-top: 12px;
+        width: 100%;
+    }
+    .price-containers .cost{
+        display: flex;
+        padding-top: 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .price-containers .cost p{
+        font-size: 20px;
+        font-weight: 900;
+        margin-right: 0;
+        width: 40%;
+        color: var(--btn-color);
+    }
+    .price-containers p{
+        color: var(--text-color);
+        width: 80%;
+        font-size: 18px;
+    }
+    .price-containers h3{
+        margin-top: 20px;
+    }
+    .advantage{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        padding-bottom: 1.2rem;
+        justify-content: space-around;
+    }
+    .advantage img{
+        width: 20px;
+        height: 20px;
+    }
+    .price-containers button{
+        padding: 0.8rem 1.6rem;
+    }
+}
